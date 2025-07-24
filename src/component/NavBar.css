@@ -1,0 +1,96 @@
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+.NavHeader {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 1rem;
+}
+
+.Logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #344563;
+}
+
+.Hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Desktop Nav */
+.NavItems {
+  font-family: "Inter", sans-serif;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 1%;
+  font-weight: 600;
+  color: #344563;
+}
+
+/* Mobile Nav */
+.MobileNavItems {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.MobileNavLink {
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #344563;
+  cursor: pointer;
+}
+
+/* NavLink hover transition (Desktop only) */
+.NavLink {
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .NavItems {
+    display: none;
+  }
+
+  .Hamburger {
+    display: block;
+  }
+}
+
+/* .MenuLink {
+  font-family: "Inter", sans-serif;
+  text-decoration: none !important;
+  color: #344563;
+  font-weight: 600;
+} */
+
+.MenuLink {
+  font-family: "Inter", sans-serif;
+  text-decoration: none !important;
+  color: #344563;
+  font-weight: 600;
+  display: block; /* so it fills the li */
+  /* padding: 12px;   match padding from motion.li */
+}
+
+.NavLink:hover .MenuLink {
+  color: #fff !important;
+}
+
+.MenuLinkMobile {
+  font-family: "Inter", sans-serif;
+  text-decoration: none !important;
+  color: #344563;
+  font-weight: 600;
+}
